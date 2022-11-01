@@ -53,7 +53,7 @@ export default {
       menu: [],
       guest: [
         {
-          icon: 'mdi-account-cowboy-hat',
+          icon: 'mdi-account',
           title: 'Login',
           to: '/login',
         },
@@ -68,13 +68,7 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Vuetify.js',
     }
-  },
-  watch: {
-    '$vuetify.theme.dark': function () {
-      localStorage.setItem('$vuetify.theme.dark', this.$vuetify.theme.dark)
-    },
   },
   computed: {
     isAuthenticated() {
